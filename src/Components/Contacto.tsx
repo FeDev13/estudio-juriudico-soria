@@ -1,36 +1,42 @@
 import React, { useState } from "react";
+import { app } from "../credentials";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import useForm from "../Hooks/useForm";
 
+const db = getFirestore(app);
+
 export default function ContactForm() {
-  /* const [lista, setLista] = useState<unknown[]>([]);
+  const [lista, setLista] = useState<unknown[]>([]);
 
-    const [input, handleInputChangen, setInput] = useForm({
-      nombre: "", //variables de estado
-      email: "",
-      consulta: "",
-    }); */
+  const [input, handleInputChangen, setInput] = useForm({
+    nombre: "", //variables de estado
+    email: "",
+    consulta: "",
+  });
 
-  /* const notify = () => {
-      if (input.nombre === "" || input.email === "" || input.consulta === "") {
-        toast.error("Debe completar todos los campos del formulario");
-      } else {
-        toast.success("su consulta fue enviada");
-      }
-    };
-  
-    const addConsulta = async (e: React.ChangeEvent<HTMLInputElement>) => {
-      e.preventDefault();
-      setLista([...lista, input]);
-      try {
-        await addDoc(collection(db, "consultas"), {
-          ...lista,
-        });
-      } catch (error) {
-        console.log(error);
-      }
-      setInput({ nombre: "", email: "", consulta: "" }); //limpia los inputs
-      notify;
-    }; */
+  const notify = () => {
+    if (input.nombre === "" || input.email === "" || input.consulta === "") {
+      toast.error("Debe completar todos los campos del formulario");
+    } else {
+      toast.success("su consulta fue enviada");
+    }
+  };
+
+  const addConsulta = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+    setLista([...lista, input]);
+    try {
+      await addDoc(collection(db, "consultas"), {
+        ...lista,
+      });
+    } catch (error) {
+      console.log(error);
+    }
+    setInput({ nombre: "", email: "", consulta: "" }); //limpia los inputs
+    notify;
+  };
   return (
     <>
       <h2 className=" text-4xl mb-12">
@@ -40,7 +46,7 @@ export default function ContactForm() {
         <form
           className=" flex flex-col justify-between"
           action="POST"
-          /* onSubmit={(e: any) => addConsulta(e)} */
+          onSubmit={(e: never) => addConsulta(e)}
         >
           <label className=" mb-4 font-bold" htmlFor="name">
             Nombre completo
@@ -50,8 +56,8 @@ export default function ContactForm() {
             type="text"
             name="nombre"
             id="name"
-            /* onChange={handleInputChangen}
-              value={input.nombre} */
+            onChange={handleInputChangen}
+            value={input.nombre}
             placeholder="Nombre y apellido"
             autoFocus
             required
@@ -64,8 +70,8 @@ export default function ContactForm() {
             type="email"
             name="email"
             id="email"
-            /*  onChange={handleInputChangen}
-              value={input.email} */
+            onChange={handleInputChangen}
+            value={input.email}
             placeholder="correo electronico"
             autoFocus
             required
@@ -81,19 +87,20 @@ export default function ContactForm() {
             rows={7}
             placeholder="Maximo 120 caracteres"
             maxLength={120}
-            /* onChange={handleInputChangen}
-              value={input.consulta} */
+            onChange={handleInputChangen}
+            value={input.consulta}
             required
           ></textarea>
           <button
             type="submit"
             className=" text-center m-8 w-[70%] rounded-md bg-blue-700 text-white font-bold"
             onClick={() => {
-              /* notify(); */
+              notify();
             }}
           >
             Enviar
           </button>
+          <ToastContainer />
         </form>
       </ul>
     </>
