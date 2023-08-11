@@ -13,13 +13,13 @@ export default function LargeWithLogoLeft() {
         </div>
         <div className="flex flex-col gap-4 xsm:flex-row md:p-0">
           <p>Av. Independencia</p>
-          <p>+549223</p>
+          <p>+5492234373416</p>
           <p>estudiosoriasanmartin@gmail.com</p>
         </div>
       </div>
       <div className="w-full h-px m-auto bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between ">
-        <div>&#169; 2022</div>
+        <div>&#169; 2023</div>
       </div>
     </footer>
   );

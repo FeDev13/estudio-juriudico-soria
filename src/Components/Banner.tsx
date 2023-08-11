@@ -1,5 +1,4 @@
 import banner from "../assets/banner.jpg";
-
 import ReactWhatsapp from "react-whatsapp";
 import { Center } from "@chakra-ui/react";
 
@@ -24,7 +23,7 @@ export const Banner = () => {
           mx="auto"
           borderRadius={"3xl"}
         >
-          <ReactWhatsapp number="+5492235044778" element="button" message="">
+          <ReactWhatsapp number="+5492234373416" element="button" message="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="icon icon-tabler icon-tabler-brand-whatsapp"

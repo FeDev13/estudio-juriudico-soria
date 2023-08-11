@@ -1,7 +1,7 @@
 import banner from "../assets/1.jpg";
 
 const datos = [
-  "atencion telefonica: +5492223556565",
+  "atencion telefonica: +5492234373416",
   "Somos un estudio juridico con amplia experiencia en la ciudad de Mar del Plata, en el cual nuestros clientes encontraran celeridad y confianza. El objetivo central es la satisfaccion del cliente brindando la mejor solucion posible al caso concreto",
 ];
 
