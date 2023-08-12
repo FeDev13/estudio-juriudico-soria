@@ -15,7 +15,7 @@ const materias = [
 export const Civil = () => {
   return (
     <>
-      <div className=" mr-32 w-1/5">
+      <div className=" mr-32 w-full">
         <Center
           w="80px"
           h="80px"
