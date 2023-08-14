@@ -1,4 +1,7 @@
 import Logo from "../assets/Black Brown Modern Law Firm Logo.png";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function LargeWithLogoLeft() {
   return (
@@ -12,9 +15,18 @@ export default function LargeWithLogoLeft() {
           <img src={Logo} alt="logo estudio" className="w-1/2" />
         </div>
         <div className="flex flex-col gap-4 xsm:flex-row md:p-0">
-          <p>Av. Independencia</p>
-          <p>+5492234373416</p>
-          <p>estudiosoriasanmartin@gmail.com</p>
+          <p>
+            <LocationOnIcon />
+            Av. Independencia
+          </p>
+          <p>
+            {" "}
+            <PhoneAndroidIcon /> +5492234373416
+          </p>
+          <p>
+            {" "}
+            <EmailIcon /> estudiosoriasanmartin@gmail.com
+          </p>
         </div>
       </div>
       <div className="w-full h-px m-auto bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>

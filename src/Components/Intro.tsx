@@ -9,7 +9,7 @@ export const Intro = () => {
   return (
     <div className=" mb-10">
       <div className="  flex flex-col w-1/2 mx-auto md:flex-col md:justify-center lg:flex-row">
-        <button className="hidden mx-10 lg:flex p-8 rounded-lg bg-blue-900 ">
+        <button className="hidden mx-10 lg:flex p-8 rounded-lg bg-gradient-to-r from-finish-blue to-starting-blue ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-phone "
@@ -29,7 +29,7 @@ export const Intro = () => {
             {datos.slice(0, 1)}
           </p>
         </button>
-        <button className=" hidden lg:flex p-8 rounded-lg bg-blue-900">
+        <button className=" hidden lg:flex p-8 rounded-lg bg-gradient-to-r from-finish-blue to-starting-blue">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-mail mr-8"
@@ -56,7 +56,7 @@ export const Intro = () => {
         <img
           src={banner}
           alt="banner"
-          className=" w-[50%] rounded-xl mx-auto md:m-auto lg:h-1/2"
+          className=" w-[100%] rounded-xl mx-auto md:m-auto lg:h-1/2 lg:w-1/2 lg:mr-16"
         />
         <div>
           <h1 className=" text-2xl md:text-5xl md:ml-0 mt-32">

@@ -8,15 +8,15 @@ import { motion } from "framer-motion";
 export function Materias() {
   return (
     <motion.div
-      animate={{ x: 100 }}
+      animate={{ x: 15 }}
       transition={{ ease: "easeOut", duration: 2 }}
     >
-      <div className="flex flex-col md:flex-row md:justify-around">
+      <div className="flex flex-col lg:flex-row lg:justify-evenly">
         <h2>Poseemos amplia experiencia en diversas ramas del derecho como:</h2>
-        <div className="mb-24">
+        <div className="mb-24 ">
           <FactoryIcon color="secondary" sx={{ fontSize: 100 }} />
           <ul>
-            <button className="  text-white text-lg bg-blue-700 rounded-lg p-2">
+            <button className="  text-white text-lg bg-gradient-to-r from-finish-blue to-starting-blue rounded-lg p-2">
               Derecho laboral
             </button>
             <li>Despidos</li>
@@ -26,10 +26,10 @@ export function Materias() {
         </div>
         <div className="mb-24">
           <FamilyRestroomIcon sx={{ fontSize: 100 }} />
-          <h2 className=" text-lg">Derecho de familia</h2>
+
           <ul>
-            <button className="  text-white text-lg bg-blue-700 rounded-lg p-2">
-              Derecho laboral
+            <button className="  text-white text-lg bg-gradient-to-r from-finish-blue to-starting-blue rounded-lg p-2">
+              Derecho de familia
             </button>
             <li>Divorcios</li>
             <li>Alimentos</li>
@@ -38,8 +38,11 @@ export function Materias() {
         </div>
         <div className=" mb-32">
           <BalanceIcon sx={{ fontSize: 100 }} />
-          <h2 className=" text-lg">Derecho civil</h2>
+
           <ul>
+            <button className="  text-white text-lg bg-gradient-to-r from-finish-blue to-starting-blue rounded-lg p-2">
+              Derecho civil
+            </button>
             <li>Daños y perjuicios</li>
             <li>Redaccion de contratos</li>
             <li>Sucesiones</li>
@@ -47,7 +50,7 @@ export function Materias() {
           </ul>
         </div>
         <h3 className=" ml-1 mb-10 lg:hidden">Consultenos</h3>
-        <div className=" ml-32 sm:mr-32 lg:hidden">
+        <div className=" mr-1 sm:mr-1 lg:hidden">
           {/* variant="gradient"
         size="sm"  */}
 

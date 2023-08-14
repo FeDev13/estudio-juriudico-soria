@@ -7,7 +7,6 @@ const materias = [
       "Daños y perjuicios",
       "Incumplimientos contractuales",
       "Sucesiones",
-      "Derecho del consumidor",
     ],
   },
 ];
@@ -19,7 +18,7 @@ export const Civil = () => {
         <Center
           w="80px"
           h="80px"
-          bg="#00394d"
+          bgGradient="linear(to-l, #032761,#2e8194 )"
           color="white"
           mx="auto"
           borderRadius={"xl"}
@@ -44,18 +43,17 @@ export const Civil = () => {
             <path d="M21 12l-3 -6l-3 6a3 3 0 0 0 6 0"></path>
           </svg>
         </Center>
-        <h3 className=" my-5">
-          {materias.map(({ title, items }) => (
-            <ul key={title} className=" text-xl underline">
-              {title}
-              {items.map((item) => (
-                <li key={item} className=" text-base no-underline">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          ))}
-        </h3>
+
+        {materias.map(({ title, items }) => (
+          <ul key={title} className=" text-2xl mb-5 mt-4 underline">
+            {title}
+            {items.map((item) => (
+              <li key={item} className=" text-base no-underline mt-5">
+                {item}
+              </li>
+            ))}
+          </ul>
+        ))}
       </div>
     </>
   );

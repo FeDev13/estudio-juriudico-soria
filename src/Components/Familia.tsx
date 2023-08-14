@@ -7,7 +7,7 @@ export const Familia = () => {
         <Center
           w="80px"
           h="80px"
-          bg="#00394d"
+          bgGradient="linear(to-l, #032761,#2e8194 )"
           color="white"
           mx="auto"
           borderRadius={"xl"}
@@ -34,8 +34,8 @@ export const Familia = () => {
           </svg>
         </Center>
 
-        <h3 className=" text-lg underline my-5">Derecho de familia</h3>
-        <ul>
+        <h3 className=" text-2xl underline my-5">Derecho de familia</h3>
+        <ul className="mb-10 underline">
           <li>Divorcios</li>
           <li>Alimentos</li>
           <li>Cuidado personal</li>

@@ -12,7 +12,7 @@ export const Consumidor = () => {
       <Center
         w="80px"
         h="80px"
-        bg="#00394d"
+        bgGradient="linear(to-l, #032761,#2e8194 )"
         color="white"
         mx="auto"
         borderRadius={"xl"}
@@ -37,18 +37,17 @@ export const Consumidor = () => {
           <path d="M14 17h1"></path>
         </svg>
       </Center>
-      <h3 className=" my-5">
-        {laboral.map(({ title, items }) => (
-          <ul key={title} className=" text-xl underline">
-            {title}
-            {items.map((item) => (
-              <li key={item} className=" text-base no-underline">
-                {item}
-              </li>
-            ))}
-          </ul>
-        ))}
-      </h3>
+
+      {laboral.map(({ title, items }) => (
+        <ul key={title} className=" text-2xl underline mb-5 mt-4">
+          {title}
+          {items.map((item) => (
+            <li key={item} className=" text-base mt-5 no-underline">
+              {item}
+            </li>
+          ))}
+        </ul>
+      ))}
     </div>
   );
 };
