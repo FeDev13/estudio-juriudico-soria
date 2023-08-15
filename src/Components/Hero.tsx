@@ -10,7 +10,7 @@ export const Hero = () => {
   return (
     <>
       <motion.div
-        animate={{ x: 100 }}
+        animate={{ x: 50 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
         <Banner />

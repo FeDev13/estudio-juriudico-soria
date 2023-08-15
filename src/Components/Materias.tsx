@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export function Materias() {
   return (
     <motion.div
-      animate={{ x: 15 }}
+      animate={{ x: 7 }}
       transition={{ ease: "easeOut", duration: 2 }}
     >
       <div className="flex flex-col lg:flex-row lg:justify-evenly">
@@ -50,7 +50,7 @@ export function Materias() {
           </ul>
         </div>
         <h3 className=" ml-1 mb-10 lg:hidden">Consultenos</h3>
-        <div className=" mr-1 sm:mr-1 lg:hidden">
+        <div className=" mr-1 sm:mr-1 lg:hidden -mb-96">
           {/* variant="gradient"
         size="sm"  */}
 
