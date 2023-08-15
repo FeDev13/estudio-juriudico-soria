@@ -64,7 +64,7 @@ export const Intro = () => {
             Quienes somos
           </h1>
 
-          <p className=" text-xl text-left mb-32 w-full p-1 md:w-full md:ml-0 md:text-2xl lg:h-1/2 ">
+          <p className=" text-xl text-center mb-32 w-full p-1 md:w-full md:ml-0 md:text-2xl lg:h-1/2 ">
             {datos.slice(1)}
           </p>
         </div>
