@@ -19,12 +19,12 @@ export default function Nav() {
     );
   }, []);
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 ">
+    <ul className="mb-4 mt-2 flex flex-col lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 bg-white">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
+        className="p-1 font-normal bg-white"
       >
         <Link to="/quiensoy"> Acerca de mi </Link>
       </Typography>
@@ -32,7 +32,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal mr-10"
+        className="p-1 font-normal mr-10 bg-white"
       >
         <Link to="/materias"> Materias </Link>
       </Typography>
@@ -40,7 +40,7 @@ export default function Nav() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal mr-8"
+        className="p-1 font-normal mr-8 bg-white"
       >
         <Link to="/contacto"> Contacto</Link>
       </Typography>
@@ -48,15 +48,17 @@ export default function Nav() {
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 lg:items-center border-none">
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+    <Navbar className="mx-auto w-full py-2 px-4 lg:px-8 lg:py-4 lg:items-center border-none bg-white mb-10">
+      <div className="container mx-auto flex items-center justify-between text-blue-gray-900 bg-white">
         <Typography as="a" className="mr-4 cursor-pointer py-1.5 font-medium">
           <Link to="/">
             <img src={Logo} alt="logo soria" className=" w-[50%]" />
           </Link>
         </Typography>
-        <div className="hidden lg:block lg:items-center mb-16">{navList}</div>
-        <div className="hidden lg:inline-block mb-16">
+        <div className="hidden lg:block lg:items-center mb-16 bg-white">
+          {navList}
+        </div>
+        <div className="hidden lg:inline-block mb-16 bg-white">
           {/*  variant="gradient"
           size="sm"
            */}
@@ -72,7 +74,7 @@ export default function Nav() {
             <ReactWhatsapp number="+5492234373416" element="button" message="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="icon icon-tabler icon-tabler-brand-whatsapp"
+                className="icon icon-tabler icon-tabler-brand-whatsapp bg-transparent"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -91,7 +93,7 @@ export default function Nav() {
         </div>
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden mb-24"
+          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden mb-24 bg-white"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
@@ -99,7 +101,7 @@ export default function Nav() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
-              className="h-6 w-6"
+              className="h-6 w-6 bg-white"
               viewBox="0 0 24 24"
               stroke="currentColor"
               strokeWidth={2}
@@ -113,7 +115,7 @@ export default function Nav() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 bg-white"
               fill="none"
               stroke="currentColor"
               strokeWidth={2}
@@ -128,7 +130,7 @@ export default function Nav() {
         </IconButton>
       </div>
       <Collapse open={openNav}>
-        <div className="container flex justify-start ml-10">{navList}</div>
+        <div className="container flex justify-start bg-white">{navList}</div>
       </Collapse>
     </Navbar>
   );

@@ -14,7 +14,7 @@ export const Familia = () => {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-users-group mx-auto"
+            className="icon icon-tabler icon-tabler-users-group mx-auto bg-transparent"
             width="52"
             height="52"
             viewBox="0 0 24 24"

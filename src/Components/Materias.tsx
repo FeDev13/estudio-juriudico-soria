@@ -33,7 +33,7 @@ export function Materias() {
             </button>
             <li>Divorcios</li>
             <li>Alimentos</li>
-            <li>Regimen de comunicacion</li>
+            <li>Cuidado personal</li>
           </ul>
         </div>
         <div className=" mb-32">
@@ -44,9 +44,8 @@ export function Materias() {
               Derecho civil
             </button>
             <li>Daños y perjuicios</li>
-            <li>Redaccion de contratos</li>
+            <li>Incumplimientos contractuales</li>
             <li>Sucesiones</li>
-            <li>Derecho del consumidor</li>
           </ul>
         </div>
         <h3 className=" ml-1 mb-10 lg:hidden">Consultenos</h3>

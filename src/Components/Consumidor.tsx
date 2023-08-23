@@ -19,7 +19,7 @@ export const Consumidor = () => {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-building-factory-2"
+          className="icon icon-tabler icon-tabler-building-factory-2 bg-transparent"
           width="54"
           height="54"
           viewBox="0 0 24 24"

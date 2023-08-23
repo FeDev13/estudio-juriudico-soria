@@ -5,11 +5,11 @@ const informacion = [
     title:
       "Soy egresado de la Universidad Nacional de Mar del Plata, en la cual obtuve mi titulo de grado. Actualmente ademas de desempeñarme como abogado particular, formo parte del consultorio juridico gratuito del Colegio de Abogados de Mar del Plata. Durante mi formacion como profesional, ademas, he realizado diversas capacitaciones entre las cuales se encuentran:",
     items: [
-      "Practicas Comerciales y Defensa del Consumidor, año 2022 Derecho del Consumidor, Parte General, año 2021.",
-      "Introducción a la Inteligencia Artificial y su Impacto sobre el Derecho, año 2021 ",
-      "Seguros y Código Civil Y Comercial, dictado por el Dr. Waldo Sobrino, Buenos Aires, año 2022",
-      "SUCESORIA DESDE EL ESTUDIO DEL ABOGADO HASTA LA LIQUIDACIÓN DEL ACERVO SUCESORIO-CUESTIONES PRÁCTICAS",
-      "El ejercicio profesional en el abordaje de la violencia de género",
+      "Practicas Comerciales y Defensa del Consumidor, año 2022 Derecho del Consumidor, Parte General (año 2021)",
+      "Introducción a la Inteligencia Artificial y su Impacto sobre el Derecho (año 2021) ",
+      "Seguros y Código Civil Y Comercial, dictado por el Dr. Waldo Sobrino, Buenos Aires (año 2022)",
+      "Planificacion Sucesoria Desde El Estudio Del Abogado Hasta La Liquidacion Del Acervo Sucesorio-Cuestiones practicas",
+      "El Ejercicio Profesional En El Abordaje De La Violencia De Género (año 2021)",
     ],
   },
 ];

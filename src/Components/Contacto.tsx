@@ -42,13 +42,13 @@ export default function ContactForm() {
       <h2 className=" text-4xl mb-12">
         Complete el formulario y nos contactaremos a la brevedad
       </h2>
-      <ul className="p-4 w-96 h-full text-base-content bg-slate-200 text-base mx-auto rounded-xl">
+      <ul className="p-4 w-96 h-full text-base-content bg-white text-base mx-auto rounded-xl">
         <form
-          className=" flex flex-col justify-between"
+          className=" flex flex-col justify-between bg-white"
           action="POST"
           onSubmit={(e: never) => addConsulta(e)}
         >
-          <label className=" mb-4 font-bold" htmlFor="name">
+          <label className=" mb-4 font-bold bg-transparent" htmlFor="name">
             Nombre completo
           </label>
           <input
@@ -62,7 +62,7 @@ export default function ContactForm() {
             autoFocus
             required
           />
-          <label className=" mb-4 font-bold" htmlFor="">
+          <label className=" mb-4 font-bold bg-transparent" htmlFor="">
             Email
           </label>
           <input
@@ -76,7 +76,7 @@ export default function ContactForm() {
             autoFocus
             required
           />
-          <label className=" mb-4 font-bold " htmlFor="consulta">
+          <label className=" mb-4 font-bold bg-transparent " htmlFor="consulta">
             Escriba su consulta
           </label>
           <textarea

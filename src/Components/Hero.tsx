@@ -16,7 +16,7 @@ export const Hero = () => {
         <Banner />
         <Intro />
         <Center
-          height="200px"
+          height="400px"
           className=" flex flex-col  items-center h-14 lg:flex-row"
         >
           {" "}

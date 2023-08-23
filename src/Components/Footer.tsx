@@ -7,31 +7,32 @@ export default function LargeWithLogoLeft() {
   return (
     <footer
       id="dark-theme"
-      className="mt-[120%] flex flex-col w-full gap-8 px-8 py-16 md:gap-12 lg:mt-4"
+      className="mt-[120%] flex flex-col w-full gap-8 px-8 py-16 md:gap-12 lg:mt-4 bg-white"
     >
       <div className="w-full h-px m-auto bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
-      <div className="flex flex-col items-center gap-8 md:justify-between md:flex-row">
-        <div className="flex flex-col gap-2">
+      <div className="flex flex-col items-center gap-8 md:justify-between md:flex-row bg-white">
+        <div className="flex flex-col gap-2 bg-white">
           <img src={Logo} alt="logo estudio" className="w-1/2" />
         </div>
-        <div className="flex flex-col gap-4 xsm:flex-row md:p-0">
-          <p>
-            <LocationOnIcon />
+        <div className="flex flex-col gap-4 xsm:flex-row md:p-0 bg-white">
+          <p className=" bg-transparent">
+            <LocationOnIcon className=" bg-transparent" />
             Av. Independencia
           </p>
-          <p>
+          <p className=" bg-transparent">
             {" "}
-            <PhoneAndroidIcon /> +5492234373416
+            <PhoneAndroidIcon className=" bg-transparent" /> +5492234373416
           </p>
-          <p>
+          <p className=" bg-transparent">
             {" "}
-            <EmailIcon /> estudiosoriasanmartin@gmail.com
+            <EmailIcon className=" bg-transparent" />{" "}
+            estudiosoriasanmartin@gmail.com
           </p>
         </div>
       </div>
       <div className="w-full h-px m-auto bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
-      <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between ">
-        <div>&#169; 2023</div>
+      <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between bg-white">
+        <div className=" bg-white">&#169; 2023</div>
       </div>
     </footer>
   );
