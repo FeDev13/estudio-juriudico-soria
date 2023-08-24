@@ -42,7 +42,7 @@ export default function ContactForm() {
       <h2 className=" text-4xl mb-12">
         Complete el formulario y nos contactaremos a la brevedad
       </h2>
-      <ul className="p-4 w-96 h-full text-base-content bg-white text-base mx-auto rounded-xl">
+      <ul className="p-4 w-96 h-full text-base-content bg-white text-base mx-auto rounded-xl -mb-64">
         <form
           className=" flex flex-col justify-between bg-white"
           action="POST"
@@ -93,7 +93,7 @@ export default function ContactForm() {
           ></textarea>
           <button
             type="submit"
-            className=" text-center m-8 w-[70%] rounded-md bg-blue-700 text-white font-bold"
+            className=" text-center mx-auto mt-3 w-[40%] rounded-md bg-blue-700 text-white font-bold"
             onClick={() => {
               notify();
             }}

@@ -11,10 +11,10 @@ export default function LargeWithLogoLeft() {
     >
       <div className="w-full h-px m-auto bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
       <div className="flex flex-col items-center gap-8 md:justify-between md:flex-row bg-white">
-        <div className="flex flex-col gap-2 bg-white">
-          <img src={Logo} alt="logo estudio" className="w-1/2" />
+        <div className="flex flex-col gap-2 bg-white ml-52">
+          <img src={Logo} alt="logo estudio" className="w-[70%]" />
         </div>
-        <div className="flex flex-col gap-4 xsm:flex-row md:p-0 bg-white">
+        <div className="flex flex-col gap-4 md:p-0 bg-white">
           <p className=" bg-transparent">
             <LocationOnIcon className=" bg-transparent" />
             Av. Independencia
