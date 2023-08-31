@@ -14,7 +14,7 @@ export function Materias() {
       <div className="flex flex-col lg:flex-row lg:justify-evenly">
         <h2>Poseemos amplia experiencia en diversas ramas del derecho como:</h2>
         <div className="mb-24 ">
-          <FactoryIcon color="secondary" sx={{ fontSize: 100 }} />
+          <FactoryIcon color="secondary" sx={{ fontSize: 70 }} />
           <ul>
             <button className="  text-white text-lg bg-gradient-to-r from-finish-blue to-starting-blue rounded-lg p-2">
               Derecho laboral
@@ -25,7 +25,7 @@ export function Materias() {
           </ul>
         </div>
         <div className="mb-24">
-          <FamilyRestroomIcon sx={{ fontSize: 100 }} />
+          <FamilyRestroomIcon sx={{ fontSize: 70 }} />
 
           <ul>
             <button className="  text-white text-lg bg-gradient-to-r from-finish-blue to-starting-blue rounded-lg p-2">
@@ -37,7 +37,7 @@ export function Materias() {
           </ul>
         </div>
         <div className=" mb-32">
-          <BalanceIcon sx={{ fontSize: 100 }} />
+          <BalanceIcon sx={{ fontSize: 70 }} />
 
           <ul>
             <button className="  text-white text-lg bg-gradient-to-r from-finish-blue to-starting-blue rounded-lg p-2">

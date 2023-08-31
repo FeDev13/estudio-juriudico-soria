@@ -42,7 +42,7 @@ export default function ContactForm() {
       <h2 className=" text-4xl mb-12">
         Complete el formulario y nos contactaremos a la brevedad
       </h2>
-      <ul className="p-4 w-96 h-full text-base-content bg-white text-base mx-auto rounded-xl -mb-64">
+      <ul className="p-4 w-96 h-full text-base-content bg-white text-base mx-auto rounded-xl -mb-64 md:mb-10">
         <form
           className=" flex flex-col justify-between bg-white"
           action="POST"

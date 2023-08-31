@@ -22,10 +22,10 @@ export function About() {
         <img
           src={profilePic}
           alt="imagen de perfil"
-          className=" rounded-full mr-8  sm:mx-auto sm:rounded-md sm:w-[60%] lg:h-1/2 lg:w-[30%]"
+          className=" rounded-2xl sm:mx-auto sm:rounded-md sm:w-[60%] lg:h-1/2 lg:w-[30%]"
         />
         {informacion.map(({ title, items }) => (
-          <p className=" w-1/2 mx-auto my-16 text-lg text-justify sm:mx-auto -mb-96">
+          <p className=" w-1/2 mx-auto my-16 text-lg text-justify sm:mx-auto -mb-96 md:mb-2">
             {title}
             {items.map((item) => (
               <li className=" text-left mt-5">{item}</li>
