@@ -52,7 +52,7 @@ export const Intro = () => {
         </button>
       </div>
 
-      <div className=" flex flex-col mr-32 md:flex-col lg:flex-row mb-8 p-12 mt-24">
+      <div className=" flex flex-col w-[110%] -ml-20 md:flex-col lg:flex-row mb-8 p-12 mt-24">
         <img
           src={banner}
           alt="banner"
@@ -64,7 +64,7 @@ export const Intro = () => {
             Quienes somos
           </h1>
 
-          <p className=" text-xl text-center mb-32 w-full p-1 md:w-full md:ml-0 md:text-2xl lg:h-1/2 ">
+          <p className=" text-xl md:text-left mb-32 w-full p-1 md:w-full md:ml-0 md:text-2xl lg:h-1/2 ">
             {datos.slice(1)}
           </p>
         </div>

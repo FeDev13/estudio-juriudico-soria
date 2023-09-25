@@ -9,11 +9,11 @@ export const Banner = () => {
         <img
           src={banner}
           alt="banner"
-          className=" w-full md:w-[60%] sm:ml-10 md:ml-28 lg:mx-auto mb-28 rounded-xl"
+          className=" w-full mx-auto md:w-[60%] sm:ml-10 md:ml-28 lg:mx-auto mb-28 rounded-xl"
         />
       </div>
 
-      <h3 className=" mr-32 lg:hidden">Consultenos</h3>
+      <h3 className=" mr-32 lg:hidden mb-8">Consultenos</h3>
       <div className=" mr-32 sm:mr-32 lg:hidden">
         {/* variant="gradient"
         size="sm"  */}
