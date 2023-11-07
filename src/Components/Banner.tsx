@@ -4,17 +4,17 @@ import { Center } from "@chakra-ui/react";
 
 export const Banner = () => {
   return (
-    <div className=" flex flex-col mx-auto md:flex">
-      <div className=" w-[70%] ml-0 md:w-full">
+    <div className=" flex flex-col mx-auto md:flex ">
+      <div className=" w-[90%] mx-auto md:w-full">
         <img
           src={banner}
           alt="banner"
-          className=" w-full mx-auto md:w-[60%] sm:ml-10 md:ml-28 lg:mx-auto mb-28 rounded-xl"
+          className=" w-full mx-auto md:w-[60%] sm:ml-10 md:mx-auto lg:mx-auto mb-28 rounded-xl"
         />
       </div>
 
-      <h3 className=" mr-32 lg:hidden mb-8">Consultenos</h3>
-      <div className=" mr-32 sm:mr-32 lg:hidden">
+      <h3 className=" lg:hidden mb-8">Consultenos</h3>
+      <div className=" lg:hidden">
         {/* variant="gradient"
         size="sm"  */}
 

@@ -52,7 +52,7 @@ export const Intro = () => {
         </button>
       </div>
 
-      <div className=" flex flex-col w-[110%] -ml-20 md:flex-col lg:flex-row mb-8 p-12 mt-24">
+      <div className=" flex flex-col w-[100%] md:flex-col lg:flex-row mb-8 p-12 mt-24">
         <img
           src={banner}
           alt="banner"

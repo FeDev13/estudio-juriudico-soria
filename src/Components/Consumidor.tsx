@@ -8,7 +8,7 @@ const laboral = [
 
 export const Consumidor = () => {
   return (
-    <div className=" mr-32 w-full">
+    <div className=" mx-auto w-full">
       <Center
         w="80px"
         h="80px"

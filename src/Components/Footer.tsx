@@ -32,7 +32,9 @@ export default function LargeWithLogoLeft() {
       </div>
       <div className="w-full h-px m-auto bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
       <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between bg-white">
-        <div className=" bg-white">&#169; 2023</div>
+        <div className=" bg-white">
+          &#169;Estudio Juridico Soria San Martin. 2023
+        </div>
       </div>
     </footer>
   );
